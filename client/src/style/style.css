@@ -1,0 +1,161 @@
+.Login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f2f0;
+}
+
+.container {
+  width: 400px;
+  height: auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.loginContainerTop {
+  /* background: aqua; */
+  padding: 1rem 0 0 0;
+}
+
+.loginContainerBottom {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginInput {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.logininputGroup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 1rem 0;
+}
+
+.logininputGroup span.showPass {
+  position: absolute;
+  top: 45%;
+  right: 1rem;
+  transform: translateY(-48%);
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.loginForgotPass {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: -0.5rem 0 0.8rem 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #016FE9;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.loginForgotPass:hover {
+  text-decoration: underline;
+}
+
+.loginFormsubmitBtn {
+  width: 100%;
+  height: 100%;
+  background-color: #016FE9;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.loginFormsubmitBtn:hover {
+  background-color:  #0062d2;
+}
+
+.loginFormBottom {
+  margin: 0.5rem 0 0 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.loginFormRegisterBtn {
+  background-color: transparent;
+  color: #016FE9;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.loginFormRegisterBtn:hover {
+  text-decoration: underline;
+  color: #0062d2;
+}
+
+.OtpVerifyInput::-webkit-inner-spin-button,
+.OtpVerifyInput::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .loginContainerBottom {
+    width: 80%;
+  }
+
+  .loginFormBottom {
+    flex-direction: column;
+  }
+
+  .loginFormRegisterBtn {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .loginContainerBottom {
+    width: 80%;
+  }
+
+}
